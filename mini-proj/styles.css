@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&display=swap');
 
-
 .container-fluid{
-   padding: 5% 15% 5% !important;
-}
+    padding: 5% 15% 5% !important;
+ }
+
 h2{
     text-align: center;
     padding-bottom: 1%;
@@ -13,11 +13,11 @@ h2{
 .main-bg{
     background-color: #C1EBE2;
 }
+
 /* NAVBAR */
 .navbar{
     margin: 0;
     padding-bottom: 10px;
-
 }
 .navbar-brand{
     padding-top: 0;
@@ -37,6 +37,33 @@ h2{
     line-height: 1.5;
     padding-right: 5%;
     margin-top: 5%;
+}
+#title p{
+    font-size: 1rem;
+    padding: 30px 100px 0 0;
+}
+
+/* ABOUT */
+   #about1{
+    height: 80%;
+    width: 80%;
+    margin: 3% 10% 5% 20%;
+   }
+   #about-txt1{
+    margin-top: 50px;
+    padding: 0 150px 0 50px;
+    line-height: 30px;
+   }
+   #about-txt2{
+    margin-top: 50px;
+    padding: 0 50px 0 150px;
+    line-height: 30px;
+   }
+   #about2{
+    margin: 3% 0% 5%;
+    height: 90%;
+    width: 100%;
+    padding-right: 50px;
    }
 
 
@@ -44,40 +71,96 @@ h2{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ACCORDION */
+.faq-img{
+    padding-left: 150px;
+}
+.faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question h3{
+    font-size: 1.8rem;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+.faq.active .answer{
+    max-height: 300px;
+}
+.faq.active svg{
+    transform: rotate(180deg);
+}
 
+
+
+
+
+/* div.c{
+    position: relative;
+  }
+  input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 90%;
+    width: 90%;
+    opacity:0;
+    visibility: 0;
+  }
+  h3{
+    background: #C1EBE2;
+    color: #AB5429;
+    padding:.5em;
+    position: relative;
+  }
+  label::before{
+    content:"";
+    display: inline-block;
+    border: 15px solid transparent;
+    border-left:20px solid white;
+  }
+  label{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  div.p{
+    max-height:0px;
+    overflow: hidden;
+    transition:max-height 0.5s;
+    background-color: white;
+    box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  div.p p {
+    padding:1em;
+  }
+  input:checked ~ h3 label::before{
+    border-left:15px solid transparent;
+    border-top:20px solid white;
+    margin-top:12px;
+    margin-right:10px;
+  }
+  input:checked ~ h3 ~ div.p{
+    max-height:100px;
+  }
+   */
 
 
 
