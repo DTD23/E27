@@ -11,8 +11,20 @@ h2{
     padding-bottom: 1%;
 }
 .main-bg{
-    background-color: #C1EBE2;
+    /* background-color: #C1EBE2; */
+  background-image: url(./assets/images/Untitled\ design.svg);
+  background-color: rgb(193, 235, 226);
+  background-size: 30%;
+  background-position: center;
+  background-attachment: fixed;
 }
+.glass-container {
+    background: linear-gradient(rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.562));
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    margin: 20px;
+  }
 
 /* NAVBAR */
 .navbar{
@@ -67,11 +79,7 @@ h2{
    }
 
 
-
-
-
-
-/* ACCORDION */
+/* FAQS ACCORDION */
 .faq-img{
     padding-left: 150px;
 }
@@ -107,60 +115,20 @@ h2{
     transform: rotate(180deg);
 }
 
-
-
-
-
-/* div.c{
-    position: relative;
-  }
-  input{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 90%;
-    width: 90%;
-    opacity:0;
-    visibility: 0;
-  }
-  h3{
-    background: #C1EBE2;
-    color: #AB5429;
-    padding:.5em;
-    position: relative;
-  }
-  label::before{
-    content:"";
-    display: inline-block;
-    border: 15px solid transparent;
-    border-left:20px solid white;
-  }
-  label{
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  div.p{
-    max-height:0px;
-    overflow: hidden;
-    transition:max-height 0.5s;
-    background-color: white;
-    box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
-  }
-  div.p p {
-    padding:1em;
-  }
-  input:checked ~ h3 label::before{
-    border-left:15px solid transparent;
-    border-top:20px solid white;
-    margin-top:12px;
-    margin-right:10px;
-  }
-  input:checked ~ h3 ~ div.p{
-    max-height:100px;
-  }
-   */
+/* <!-- GET IN TOUCH SECTION --> */
+.glass-container p{
+    padding: 10px 350px 0;
+    text-align: center;
+}
+.git-left{
+    padding-left: 100px !important;
+}
+.git-left ul li{
+ list-style: none;
+ display: inline-block;
+ margin-right: 15px;
+ font-size: 23px;
+}
 
 
 
@@ -173,7 +141,8 @@ h2{
 
 
 
-/* BUTTON SECTION */
+
+/* BUTTONS SECTION */
 #btn {
     display: inline-block;
     padding: 0.3rem 1rem;
