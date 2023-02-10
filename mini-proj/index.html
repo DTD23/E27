@@ -30,7 +30,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#abt">About</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,11 +40,11 @@
                   <li><a class="dropdown-item" href="#">Online Store</a></li>
                   <li><a class="dropdown-item" href="#">Online Billing</a></li>
                   <li><a class="dropdown-item" href="#">Stock Management</a></li>
-                  <li><a class="dropdown-item" href="#">FAQs</a></li>
+                  <li><a class="dropdown-item" href="#faqs">FAQs</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
                  <li class="nav-item">
@@ -73,7 +73,7 @@
       </div>
 
       <!-- ABOUT SECTION -->
-      <div class="container-fluid">
+      <div class="container-fluid" id="abt">
         <div class="row">
           <div class="col-sm-12">
             <!-- Top single column content goes here -->
@@ -154,7 +154,7 @@
       </div>
   
       <!-- FAQs -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="faqs">
           <div class="row">
             <div class="left-faq col-6">
               <img class="faq-img" src="./assets/images/mainImg.png" alt="">
@@ -227,7 +227,7 @@
           </div>
         </div>
 <!-- GET IN TOUCH SECTION -->
-      <div class="container-fluid my-5 main-bg">
+      <div class="container-fluid my-5 main-bg" id="contact">
         <div class="glass-container">
         <h2>Get in Touch</h2>
         <p>We're always here to listen! Whether you have a question, suggestion, or just want to say hi, feel free to drop us a line using this contact form. We'll get back to you as soon as possible.</p>
@@ -279,7 +279,30 @@
               <!-- Your content here -->
             </div>
             <div class="col-12 col-md-6">
-              <!-- Your content here -->
+              <form>
+                <div class="form-group">
+                  <label for="fullname">Full Name:</label>
+                  <input type="text" class="form-control" id="fullname" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                  <label for="mobile">Mobile Number:</label>
+                  <input type="text" class="form-control" id="mobile" placeholder="Enter your mobile number">
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject:</label>
+                  <input type="text" class="form-control" id="subject" placeholder="Enter the subject">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              
             </div>
           </div>
         </div>
