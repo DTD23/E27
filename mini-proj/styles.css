@@ -76,7 +76,7 @@ h1{
    }
 /* FAQS ACCORDION */
 .faq-img{
-    padding-left: 150px;
+    padding-left: 230px;
 }
 .faq{
     max-width: 700px;
@@ -111,7 +111,7 @@ h1{
 }
 
 /* <!-- GET IN TOUCH SECTION --> */
-.glass-container {
+/* .glass-container {
     background: transparent;
     backdrop-filter: blur(5px);
     border-radius: 10px;
@@ -120,27 +120,16 @@ h1{
     padding: 20px;
     margin-left: 300px;
     width: 1000px;
-  }
-
-.glass-container p{
-    padding: 10px 250px 20px;
-    text-align: center;
-}
-.glass-container h4{
-    margin-left: 50px;
-}
-.git-left{
-    padding-left: 50px !important;
-}
+  } */
 #git-top ul li{
  list-style: none;
  display: inline-block;
  margin-right: 15px;
- font-size: 23px;
+ font-size: 20px;
 }
 #git-top ul{
-    padding-left: 50px;
     margin-bottom: 30px;
+    padding: 0;
 }
 #git-bot ul li{
     list-style: none;
@@ -148,20 +137,20 @@ h1{
     margin-right: 0px;
 }
 #git-bot #gcash{
-    width: 90px;
-    height: 50px;
-    margin-left: -10px;
+    width: 50px;
+    height: 30px;
+    margin-left: -45px;
 }
 #git-bot #visa,
 #git-bot #mastercard{
-    width: 85px;
-    height: 50px;
+    width: 50px;
+    height: 30px;
     margin-right: 25px;
-    margin-left: -15px;
+    margin-left: -5px;
 }
 #git-bot #paypal{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin-left: -10px;
 }
 .git-right ul li{
@@ -170,19 +159,46 @@ h1{
 }
 .git-right ul{
     padding-left: 0;
+
 }
 .git-right h4{
-    margin-top: 30px;
-    margin-left: 120px;
+    margin: 0 0 15px 0;
 }
 #lbc{
-    width: 90px;
-    height: 70px;
+    width: 70px;
+    height: 50px;
+    margin-left: -15px;
 }
 #jrs, #jnt, #ninja{
-    width: 120px;
+    width: 100px;
     height: 50px;
 }
+/* FOOTER */
+.ftr-ico .fa-solid{
+    font-size: 1.5rem;
+}
+.ftr-ico{
+   width: 30px !important;
+   padding-top: 8px;
+   margin-left: 50px;
+}
+.ftr-details{
+    padding: 30px 12px 0 130px !important;
+}
+form{
+    margin: 0px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #78e6ce;
+}
+#contact{
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+#inner-ftr{
+    padding: 5px 0;
+}
+
 /* BUTTONS SECTION */
 #btn {
     display: inline-block;
