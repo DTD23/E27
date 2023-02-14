@@ -7,5 +7,12 @@ faqs.forEach(faq => {
 });
 
 
-
+// FORM
+const form = document.querySelector('#myForm');
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // prevent the default form submission behavior
+  
+  alert('Mission accomplished! Your submission has been processed.');
+  form.reset(); // reset the form
+});
 

@@ -57,15 +57,16 @@
       <!-- 1st section -->
       <div class="container-fluid main-bg">
           <div class="row">
-          <div class="col-lg-6" id="title">
+          <div class="col-lg-6 mx-auto" id="title">
             <!-- Left column content goes here -->
             <h1>Made to meet the needs of online sellers.</h1>
             <p>Get the most out of your online selling with our order management system - designed to save time and effort.</p>
-            <a id="btn2" href="#">Free Sign up</a>
+            <button type="button" class="btn btn-dark btn-lg download_button apl"><i class="fa-brands fa-apple"></i> Download</button>
+            <button type="button" class="btn btn-outline-light btn-lg download_button ggl"><i class="fa-brands fa-google-play"></i>Download</button>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 right-bg ">
             <!-- Right column content goes here -->
-            <img id="m-img" src="./assets/images/main.png" alt="">
+            <img id="m-img" src="./assets/images/onlinestore.png" alt="">
           </div>
         </div>
       </div>
@@ -78,21 +79,21 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-lg-6 col-md-12">
             <!-- Left column content goes here -->
             <img id="about1" src="./assets/images/about1.png" alt="">
           </div>
-          <div class="col-sm-6">
+          <div class="col-lg-6 col-md-12">
             <!-- Right column content goes here -->
             <p id="about-txt1">OrderMates is the solution for small and medium ecommerce businesses looking to simplify their order management process. With our platform, you can manage orders, inventory, and customers all in one place, making it easier to grow your business. Our real-time tracking and user-friendly interface provide the tools you need to manage your business efficiently, no matter where you are. </p>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-lg-6 col-md-12">
             <!-- Left column content goes here -->
             <p id="about-txt2">At OrderMates, we're committed to your success. That's why we offer 24/7 support and regular updates to ensure our platform is always working for you. Our team is dedicated to making your life easier, so you can focus on what you do best - running your business. Say goodbye to messy spreadsheets and hello to OrderMates. Join us today and see the difference for yourself. </p>
           </div>
-          <div class="col-sm-6">
+          <div class="col-lg-6 col-sm-12">
             <!-- Right column content goes here -->
             <img id="about2" src="./assets/images/about2.png" alt="">
           </div>
@@ -106,52 +107,77 @@
             <h2>Intuitive-Features</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <!-- Single column with carousel goes here -->
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-              </ol>
-              <!-- Slides -->
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <!-- Slide 1 content goes here -->
-                </div>
-                <div class="carousel-item">
-                  <!-- Slide 2 content goes here -->
-                </div>
-                <div class="carousel-item">
-                  <!-- Slide 3 content goes here -->
-                </div>
-                <div class="carousel-item">
-                  <!-- Slide 4 content goes here -->
+        <div id="carouselExampleFade" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- First column -->
+                    <img src="./assets/images/online.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- Second column  -->
+                    <h1>Online billing</h1>
+                    <p>Would allow them to generate and send invoices to their customers electronically. This would streamline the billing process, reducing the time and resources required for manual billing tasks.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <!-- Controls -->
-              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- First column -->
+                    <h1>Online Store</h1>
+                    <p>Allows the seller to create and manage an online store to sell their products or services directly to customers. This would include setting up their store catalog, managing inventory, processing orders, and receiving payments. The seller would also have access to tools to manage the look and feel of their store, customize their checkout process, and analyze sales data to make informed business decisions.
+                    </p>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- Second column  -->
+                    <img src="./assets/images/billing.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>             
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- First column -->
+                    <img src="./assets/images/inventory.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- Second column  -->
+                    <h1>Stock management</h1>
+                    <p>An orderMates feature that helps businesses keep track of their inventory levels, monitor stock movements, and ensure that they always have enough products or materials on hand to meet customer demand.</p>
+                  </div>
+                </div>
+              </div>                   
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
+
+
+
+
       <!-- FAQs -->
         <div class="container-fluid" id="faqs">
           <div class="row">
-            <div class="left-faq col-6">
+            <div class="left-faq col-lg-6 col-sm-12">
               <img class="faq-img" src="./assets/images/mainImg.png" alt="">
             </div>
-            <div class="right-faq col-6">
+            <div class="right-faq col-lg-6 col-sm-12">
                 <h2 class="title">Got questions?</h2>
                 <div class="faq">
                   <div class="question">
@@ -209,13 +235,13 @@
           </div>
         </div>
       <!-- footer -->
-      <footer class="bg-light container-fluid" id="contact">
+      <footer class="main-bg container-fluid" id="contact">
         <div id="inner-ftr">
-          <div class="row">
+          <div class="row glass-container mx-auto">
             <div class="col-12">
-              <h2 class="text-center mb-4">Get in touch</h2>
+              <h2 class="text-center col-12 col-sm-12">Get in touch</h2>
             </div>
-            <div class="col-sm-3">
+            <div class="col-lg-3 col-sm-6">
               <div class="row">
                 <div class="col-12 git-left" id="git-top">
                   <!-- Your content here -->
@@ -239,7 +265,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3 git-right">
+            <div class="col-lg-3 col-sm-6 git-right">
               <h5>Our Shipping Method</h5>
             <ul>
               <li><img src="./assets/images/lbc.png" id="lbc" alt=""></li>
@@ -248,7 +274,7 @@
               <li><img src="./assets/images/Ninjavan.svg.png" id="ninja" alt=""></li>
             </ul>
             </div>
-            <div class="col-sm-3">
+            <div class="col-lg-3 col-sm-6">
               <div class="container">
                 <div class="row">
                   <div class="col-6 ftr-ico"><i class="fa-solid fa-location-arrow"></i></div>
@@ -273,8 +299,39 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-3">
-              <form>
+            <div class="col-lg-3 col-sm-6">
+              <form id="myForm">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="fullname" placeholder="Enter your full name">
+                  <label for="fullname">Full Name:</label>
+                  <span class="error-message" id="fullnameError"></span>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  <label for="email">Email:</label>
+                  <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="mobile" placeholder="Enter your mobile number">
+                  <label for="mobile">Mobile Number:</label>
+                  <span class="error-message" id="mobileError"></span>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="subject" placeholder="Enter the subject">
+                  <label for="subject">Subject:</label>
+                  <span class="error-message" id="subjectError"></span>
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                  <label for="message">Message:</label>
+                  <span class="error-message" id="messageError"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              
+
+
+              <!-- <form>
                 <div class="form-floating mb-3">
                   <input type="text" class="form-control" id="fullname" placeholder="Enter your full name">
                   <label for="fullname">Full Name:</label>
@@ -296,7 +353,7 @@
                   <label for="message">Message:</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
-              </form>     
+              </form>      -->
             </div>
           </div>
         </div>
