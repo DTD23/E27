@@ -26,24 +26,24 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active navLi" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#abt">About</a>
+                <a class="nav-link navLi" href="#abt">About</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle navLi" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Features
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Online Store</a></li>
-                  <li><a class="dropdown-item" href="#">Online Billing</a></li>
-                  <li><a class="dropdown-item" href="#">Stock Management</a></li>
-                  <li><a class="dropdown-item" href="#faqs">FAQs</a></li>
+                  <li><a class="dropdown-item " href="#">Online Store</a></li>
+                  <li><a class="dropdown-item " href="#">Online Billing</a></li>
+                  <li><a class="dropdown-item " href="#">Stock Management</a></li>
+                  <li><a class="dropdown-item " href="#faqs">FAQs</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link navLi" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
                  <li class="nav-item">
@@ -55,7 +55,7 @@
         </div>
       </nav>
       <!-- 1st section -->
-      <div class="container-fluid main-bg">
+      <div class="container-fluid main-bg" id="hero">
           <div class="row">
           <div class="col-lg-6 mx-auto" id="title">
             <!-- Left column content goes here -->
@@ -83,13 +83,13 @@
             <!-- Left column content goes here -->
             <img id="about1" src="./assets/images/about1.png" alt="">
           </div>
-          <div class="col-lg-6 col-md-12">
+          <div class="col-lg-6 col-md-12" id="txt1-bg">
             <!-- Right column content goes here -->
             <p id="about-txt1">OrderMates is the solution for small and medium ecommerce businesses looking to simplify their order management process. With our platform, you can manage orders, inventory, and customers all in one place, making it easier to grow your business. Our real-time tracking and user-friendly interface provide the tools you need to manage your business efficiently, no matter where you are. </p>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6 col-md-12">
+          <div class="col-lg-6 col-md-12" id="txt2-bg">
             <!-- Left column content goes here -->
             <p id="about-txt2">At OrderMates, we're committed to your success. That's why we offer 24/7 support and regular updates to ensure our platform is always working for you. Our team is dedicated to making your life easier, so you can focus on what you do best - running your business. Say goodbye to messy spreadsheets and hello to OrderMates. Join us today and see the difference for yourself. </p>
           </div>
@@ -100,7 +100,7 @@
         </div>
       </div>
       <!-- FEATURES-section -->
-      <div class="container-fluid main-bg">
+      <div class="container-fluid main-bg" id="ftrs">
         <div class="row">
           <div class="col-sm-12">
             <!-- Top single column content goes here -->
@@ -114,11 +114,11 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <!-- First column -->
-                    <img src="./assets/images/online.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/images/online.jpg" class="slides d-block w-100" alt="...">
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-sm-6 ftrs-text">
                     <!-- Second column  -->
-                    <h1>Online billing</h1>
+                    <h3>Online billing</h3>
                     <p>Would allow them to generate and send invoices to their customers electronically. This would streamline the billing process, reducing the time and resources required for manual billing tasks.
                     </p>
                   </div>
@@ -128,15 +128,15 @@
             <div class="carousel-item">
               <div class="container">
                 <div class="row">
-                  <div class="col-sm-6">
+                  <div class="col-sm-6 scnd-text">
                     <!-- First column -->
-                    <h1>Online Store</h1>
+                    <h3>Online Store</h3>
                     <p>Allows the seller to create and manage an online store to sell their products or services directly to customers. This would include setting up their store catalog, managing inventory, processing orders, and receiving payments. The seller would also have access to tools to manage the look and feel of their store, customize their checkout process, and analyze sales data to make informed business decisions.
                     </p>
                   </div>
                   <div class="col-sm-6">
                     <!-- Second column  -->
-                    <img src="./assets/images/billing.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/images/billing.jpg" class="slides d-block w-100" alt="...">
                   </div>
                 </div>
               </div>             
@@ -146,11 +146,11 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <!-- First column -->
-                    <img src="./assets/images/inventory.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/images/inventory.jpg" class="slides d-block w-100" alt="...">
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-sm-6 thrd-text">
                     <!-- Second column  -->
-                    <h1>Stock management</h1>
+                    <h3>Stock management</h3>
                     <p>An orderMates feature that helps businesses keep track of their inventory levels, monitor stock movements, and ensure that they always have enough products or materials on hand to meet customer demand.</p>
                   </div>
                 </div>
@@ -167,10 +167,6 @@
           </button>
         </div>
       </div>
-
-
-
-
       <!-- FAQs -->
         <div class="container-fluid" id="faqs">
           <div class="row">
@@ -237,12 +233,12 @@
       <!-- footer -->
       <footer class="main-bg container-fluid" id="contact">
         <div id="inner-ftr">
-          <div class="row glass-container mx-auto">
+          <div class="row mx-auto">
             <div class="col-12">
               <h2 class="text-center col-12 col-sm-12">Get in touch</h2>
             </div>
             <div class="col-lg-3 col-sm-6">
-              <div class="row">
+              <div class="row" id="socmed">
                 <div class="col-12 git-left" id="git-top">
                   <!-- Your content here -->
                   <h5>Our Social Network</h5>

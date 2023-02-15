@@ -1,24 +1,32 @@
 /* Google Font CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Merriweather:wght@300&display=swap');
 
-.container-fluid{
-    padding: 3% 7% 3% !important;
- }
-
+h1, h2, h3, h4, h5{
+    font-family: 'Hammersmith One', sans-serif;
+}
+h1{
+    margin-left: 150px;
+    font-size: 3rem !important;
+    color: #2C3D4B !important;
+}
 h2{
     text-align: center;
-    padding-bottom: 1%;
+    padding: 3% 0 5% 0;
 }
+p{
+    font-family: 'Merriweather', serif;
+}
+.container-fluid{
+    padding: 2% 0%;
+}
+
 .main-bg{
-    /* background-color: #C1EBE2; */
-  background-image: url(./assets/images/Untitled\ design.svg);
-  background-color: rgb(193, 235, 226);
+  /* background-image: url(./assets/images/pattern.jpg); */
   background-size: 30%;
   background-position: center;
   background-attachment: fixed;
+  background-color: rgba(193, 235, 226, 0.774);
 }
-
 /* NAVBAR */
 .navbar{
     margin: 0;
@@ -34,31 +42,64 @@ h2{
 .nav-item{
     margin: 10px 10px 0 10px;
 }
+.navLi{
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+    padding: 0 25px 1rem;
+    margin: 0 10px;
+}
+.navLi::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #AB5429;
+    transition: width 0.25s ease-out;
+}
+.navLi:hover::before{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
 
 /* FIRST SECTION */
+#hero{
+    padding-bottom: 170px;
+    padding: 100px 0 170px 0;
+}
+#hero .row{
+    width: 1900px;
+}
 #title{
     text-align: left;   
     line-height: 1.5;
     padding-right: 5%;
     margin: 50px 0 0 0;
 }
-h1{
-    margin-left: 150px;
-    font-size: 3.5rem;
-}
 #title p{
-    font-size: 1rem;
-    padding: 20px 100px 0 0;
-    margin-left: 150px;
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    padding: 0px 100px 20px 0;
+    margin: 0 0 50px 150px;
 }
 .right-bg{
     background-color: #D48A7A;
     border-radius: 30% 70% 34% 66% / 35% 41% 59% 65% ; 
-    width: 550px !important;
-    margin-right: 150px;
+    width: 500px !important;
+    margin-right: 300px;
 }
 
 /* ABOUT */
+    #abt h2{
+        font-size: 2.5rem;
+        color: #2C3D4B;
+    }
    #about1{
     height: 80%;
     width: 80%;
@@ -66,22 +107,77 @@ h1{
    }
    #about-txt1{
     margin-top: 100px;
-    padding: 0 150px 0 50px;
+    margin: 100px 0 0 150px;
     line-height: 30px;
+    width: 400px;
+    height: 350px;
+    color: #2C3D4B;
+    font-size: 1.2rem;
+   }
+   #txt1-bg{
+    width: 700px;
+    height: 500px;
+    background-color: #78e6ce;
+    border-radius: 50% 50% 15% 85% / 73% 0% 100% 27%; 
    }
    #about-txt2{
     margin-top: 100px;
     padding: 0 50px 0 150px;
     line-height: 30px;
+    color: #2C3D4B;
+    font-size: 1.2rem;
    }
+   #txt2-bg{
+    width: 700px;
+    height: 500px;
+    margin-left: 170px;
+    background-color: #78e6ce;
+    border-radius: 7% 93% 33% 67% / 64% 29% 71% 36% ;
+   }
+
    #about2{
     margin: 3% 0% 5%;
-    height: 90%;
-    width: 100%;
+    height: 400px;
+    width: 800pxa;
     padding-right: 50px;
    }
    /* FEATURES */
-   
+#ftrs{
+    padding-bottom: 10%;
+   }
+#ftrs h2{
+    font-size: 2.5rem;
+    color: #2C3D4B;
+}
+.ftrs-text{
+    background-color: #AB5429;
+    border-radius: 42% 58% 28% 72% / 53% 0% 100% 47% ;
+}
+.scnd-text{
+    background-color: #AB5429;
+    border-radius: 10% 90% 65% 35% / 47% 32% 68% 53% ;  
+}
+.thrd-text{
+    background-color: #AB5429;
+    border-radius: 67% 33% 65% 35% / 47% 47% 53% 53%;
+}
+.ftrs-text p, .ftrs-text h3, .scnd-text h3, .scnd-text p, .thrd-text h3, .thrd-text p{
+    color: white;
+    text-align: center;
+    padding: 10px 100px 0 100px;
+}
+.ftrs-text h3, .thrd-text h3{
+    padding-top: 100px;
+}
+.scnd-text h3{
+    padding-top: 25px;
+}
+.ftrs-text p, .scnd-text p{
+    font-size: 1.2rem;
+}
+#ftrs .slides{
+    border-radius: 20px;
+}
 /* FAQS ACCORDION */
 .faq-img{
     padding-left: 230px;
@@ -128,6 +224,9 @@ h1{
     padding: 20px;
     margin-left: 300px;
   }
+.title{
+    padding-right: 300px;
+}
 #git-top ul li{
  list-style: none;
  display: inline-block;
@@ -181,22 +280,28 @@ h1{
     height: 50px;
 }
 /* FOOTER */
+.text-center{
+    padding: 20px 0 50px 0;
+}
 .ftr-ico .fa-solid{
     font-size: 1.5rem;
 }
 .ftr-ico{
    width: 30px !important;
-   padding-top: 8px;
-   margin-left: 50px;
+   padding-top: 0px;
+   margin-left: 80px;
 }
 .ftr-details{
     padding: 30px 12px 0 130px !important;
 }
 form{
-    margin: 0px;
+    margin: 0 100px 0 0;
     padding: 20px;
     border-radius: 15px;
     background-color: #78e6ce;
+    position: relative;
+    right: 120px;
+
 }
 #contact{
     padding-bottom: 0 !important;
@@ -204,6 +309,9 @@ form{
 }
 #inner-ftr{
     padding: 5px 0;
+}
+#socmed{
+    margin-left: 200px;
 }
 
 /* BUTTONS SECTION */
