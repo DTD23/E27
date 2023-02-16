@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./SignUp.css">
+     <!-- bootstrap -->
+     <!-- favicon -->
+     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+     <!-- Fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>OrderMates</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div> 
+            <div class="social-icons">
+                <img src="./assets/images/fb.png" alt="">
+                <img src="./assets/images/tw.png" alt="">
+                <img src="./assets/images/gp.png" alt="">
+            </div>
+            <form class="input-group" id="login">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form class="input-group" id="register">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+       
+    </div>
+   
+    
+
+<!-- JS -->
+<script src="SignUp.js"></script> 
+</body>
+</html>
