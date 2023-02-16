@@ -368,6 +368,127 @@ form{
     color: #AB5429 !important;
 }
 
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+    
+    /* <!-- 1st section --> */
+    #hero{
+        padding: 30px 0 100px 0;
+    }
+    #hero .row{
+        width: 500px;
+    }
+    #hero h1{
+        font-size: 36px;
+        width: 500px;
+        margin: 0;
+        text-align: center;
+        padding-left: 60px;
+    }
+    #hero p{
+        font-size: 16px;
+        text-align: center;
+        width: 500px;
+        padding: 20px 60px 20px 80px;
+        margin: 0 0 20px 0;
+    }
+    .apl{
+        margin-left: 100px;
+    }
+    #hero .right-bg{
+        margin: 40px 0 0 20px;
+        background-color: #E67890;
+    }
+    #m-img{
+        width: 500px;
+        height: 350px;
+    }
+    /* ABOUT SECTION */
+    #txt1-bg{
+        width: 450px;
+        height: 400px;
+        margin-left: 30px;
+    }
+    #about-txt1{
+        margin: 70px 0 0 50px;
+        font-size: 16px;
+    }
+    #about2{
+        width: 500px;
+        height: 300px;
+    }
+    #txt2-bg{
+        margin: 50px 0 0 080px;
+        height: 400px;
+        width: 400px;
+        background-color: #2C3D4B;
+    }
+    #about-txt2{
+        font-size: 16px;
+        padding: 0 10px;
+        margin: 50px 0 16px 0;
+        color: white;
+    }
+    /* FEATURES SECTION */
+    .ftrs-text h3, .thrd-text h3{
+        padding-top: 30px;
+        font-size: 25px;
+    }
+    .ftrs-text p, .scnd-text p, .thrd-text p{
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+    .scnd-text p{
+        padding: 10px 80px 30px 80px;
+    }
+    #ftrs .slides{
+        padding-top: 30px;
+    }
+    .thrd-text{
+        margin-top: 30px;
+    }
+    .thrd-text{
+        margin-top: 30px;
+    }
+    .faq-img{
+        padding-left: 50px;
+    }
+    .title{
+        padding: 0;
+    }
+    .question h3 {
+        font-size: 20px;
+    }
+    .answer p{
+        font-size: 16px;
+    }
+    #inner-ftr h2{
+        padding: 20px 0px;
+    }
+    #git-top h5, #git-top ul, #git-bot h5, .git-right h5{
+        text-align: center;
+    }
+    #git-bot #gcash{
+        margin-left: 80px;
+    }
+    #socmed{
+        margin: 0;
+    }
+    #lbc{
+        margin-left: 50px;
+    }
+    .ftr-ico{
+        margin-left: 120px;
+    }
+    form{
+        margin: 0 100px 0 100px;
+        right: 0;
+    }
+
+
+}
+
   
   
    
