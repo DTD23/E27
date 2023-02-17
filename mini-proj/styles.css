@@ -489,9 +489,22 @@ form{
 
 }
 /* ONLINE STORE SECTION */
-.banner {
+/* .banner {
     position:relative;
+} */
+.bg-image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.bg-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 #shop {
     position:absolute;
