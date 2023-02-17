@@ -9,10 +9,24 @@ faqs.forEach(faq => {
 // FORM
 const form = document.querySelector('#myForm');
 form.addEventListener('submit', (event) => {
-  event.preventDefault(); // prevent the default form submission behavior
+  event.preventDefault();
   
   alert('Mission accomplished! Your submission has been processed.');
-  form.reset(); // reset the form
+  form.reset(); // reset
 });
+
+//Button
+  const appleBtn = document.getElementById('appleBtn');
+  appleBtn.addEventListener('click', function() {
+    window.open('https://www.apple.com/ph/app-store/');
+  });
+  const googlePlayBtn = document.getElementById('googlePlayBtn');
+  googlePlayBtn.addEventListener('click', function() {
+    window.open('https://play.google.com/store');
+  });
+
+
+
+
 
 
