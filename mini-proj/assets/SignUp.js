@@ -18,6 +18,7 @@ function login(){
 document.querySelector('#registerForm').addEventListener('submit', (event) => {
     event.preventDefault();
     alert('Registration successful!');
+    document.querySelector('#registerForm').reset();
   });
 
 
